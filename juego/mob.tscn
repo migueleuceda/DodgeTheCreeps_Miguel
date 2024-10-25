@@ -29,7 +29,7 @@ animations = [ {
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 43.0
 
-[node name="mob" type="RigidBody2D"]
+[node name="mob" type="RigidBody2D" groups=["mobs"]]
 position = Vector2( 108, 127 )
 collision_mask = 0
 gravity_scale = 0.0

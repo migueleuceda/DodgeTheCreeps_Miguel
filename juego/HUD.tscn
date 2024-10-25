@@ -23,7 +23,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Missatge" type="Label" parent="."]
+[node name="Message" type="Label" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -56,3 +56,8 @@ __meta__ = {
 }
 
 [node name="MessageTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]
