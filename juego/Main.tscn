@@ -37,6 +37,14 @@ rotation = -0.988686
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0.588235, 0.701961, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
 [connection signal="hit" from="Player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
 [connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]
